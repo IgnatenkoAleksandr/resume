@@ -3,24 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <title>Резюме Игнатенко Александр</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <table cellspacing="10">
-      <tr>
-        <td>
-          <img src="avka.jpg" width="250" alt="тут должно быть мое фото" />
-        </td>
-        <td><h1>Игнатенко Александр Павловоч</h1></td>
-      </tr>
-    </table>
+    <div class="container">
+ <div class="info">
+   <img src="avka.jpg" alt="тут должно быть мое фото" class="avatar"/>
+  
+        <div class="info-text"><h1>Игнатенко Александр Павлович</h1>
     <p>
       Я работаю в должности начальника отдела развития интернет-банка в компании
       <strong>ПСБ!</strong>
     </p>
     <p>С января 2022 года, я решил заниматься frontend разработкой!</p>
-
+  </div>
+  </div>
     <h2>Опыт работы</h2>
-    <table border="1">
+    <table class="table">
       <tr>
         <th>Компания</th>
         <th>Должность</th>
@@ -29,46 +28,80 @@
       <tr>
           <td>Промсвязьбанк</td>
           <td>Начальник отдела развития интернет-банка</td>
-          <td>2021</td>
+          <td>2020 - настоящее время</td>
       </tr>
       <tr>
         <td>Промсвязьбанк</td>
         <td>Управляющий менеджер развития интернет-банка</td>
-        <td>2020</td>
+        <td>2020 - 2020</td>
       </tr>
       <tr>
         <td>Промсвязьбанк</td>
         <td>Главный менеджер развития интернет-банка</td>
-        <td>2019</td>
+        <td>2019 - 2020</td>
       </tr>
       <tr>
         <td>Промсвязьбанк</td>
         <td>Ведущий менеджер развития интернет-банка</td>
-        <td>2018</td>
+        <td>2018 - 2019</td>
+      </tr>
+      <tr>
+        <td>Промсвязьбанк</td>
+        <td>Старший менеджер развития интернет-банка</td>
+        <td>2017 - 2018</td>
       </tr>
       <hr />
     </table>
-
     
-    <h2>Мои контакты</h2>
-    <hr />
+    <div class="card bg-yellow">
+    <div class="contact">
+      <h2>Мои контакты</h2>
     <ul>
 <li>Мобильный телефон/Whats up <a href="tel:+79164264587">+7(916) 426-45-87</a></li>
 <li>Электронная почта <a href="mailto:ignatenkoap@yandex.ru">ignatenkoap@yandex.ru</a> </li>
 </ul>
-
+</div>
+</div>
+<div class="card bg-red">
     <h2>Мои навыки</h2>
-    <hr />
-    <ul>
+    <ul class="list_ul">
       <li>Быстро обучаемый</li>
       <li>Клиентоориентированный</li>
       <li>Умею руководить коллективом</li>
     </ul>
+  </div>
+  <div class="card bg-green">
     <h2>Мои хобби</h2>
-    <hr />
-    <ol>
+    <ul class="list_ol">
       <li>Автомобили</li>
       <li>прогулки в парках</li>
-    </ol>
+    </ul>
+  </div>
+  
+  <h2>Связаться со мной</h2>
+ <form action="/">
+   <div class="row">
+   <div class="form-group">
+  <label for="name">Укажите имя</label>
+  <input type="name" placeholder="введите ваше имя"></div>
+  <div class="form-group">
+  <label for="mail">Укажите mail</label>
+  <input type="mail" placeholder="введите ваш п\я"></div>
+</div>
+  <div class="form-group">
+  <label for="text">Введите сообщение</label>
+  <textarea name="text" id="" cols="10" rows="3"></textarea>
+</div>
+
+<input class="btn" type="submit" value="Отправить контакты">
+</form>
+  
+<!-- <div class="position">
+  <div class="box"></div>
+</div> -->
+
+
+  <div style="margin-bottom: 200px;">
+  </div>
   </body>
 </html>
